@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { Store } from '@ngrx/store';
+
+import { appLoaded, getAllDogs } from './core/state/dog';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'zz-dog-breed-app';
+export class AppComponent implements OnInit {
+    title = 'zz-dog-breed-app';
+
+    constructor(
+        private store: Store,
+    ) {}
+
+    public ngOnInit(): void {
+        console.log('INIT')
+
+        this.store.dispatch(getAllDogs());
+    }
 }

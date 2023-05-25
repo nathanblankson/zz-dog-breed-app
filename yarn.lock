@@ -1485,6 +1485,32 @@
   resolved "https://registry.npmjs.org/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
+"@ngrx/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@ngrx/core/-/core-1.2.0.tgz#882b46abafa2e0e6d887cb71a1b2c2fa3e6d0dc6"
+  integrity sha512-cxPnK57DHrRG8TLeYfBVT4ZfWCqcsqtM8JmHz8GoaxWmIkWGDWoNN/PYlN8ze++zRs9Qd5ovty4rcnQqNIR15Q==
+
+"@ngrx/effects@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.npmjs.org/@ngrx/effects/-/effects-16.0.0.tgz#932c1fa2d2e98be78ab14d9fb9d308277aaf98f9"
+  integrity sha512-l3H/yCwVl8DPmUasOEDthdv9lZMhCSJwBxfSXjUW7gKJVEamP3PSuvExp0ZpW9RULPblgcfTM1TH8VcPAHelQw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store-devtools@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.npmjs.org/@ngrx/store-devtools/-/store-devtools-16.0.0.tgz#39d2cce10dc403482ef7224ee15793e3da6f905a"
+  integrity sha512-20+jv+k6W3PM6gohiYaUXiEv9U0fFLMZJb7c7ARRsu1vWICC59dW77OPMhoVrqDLoMgr4gMikw/BwfceSLxCJA==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store@^16.0.0":
+  version "16.0.0"
+  resolved "https://registry.npmjs.org/@ngrx/store/-/store-16.0.0.tgz#c2d0e90eb7c16ab4f112029a8f958d29110d2b56"
+  integrity sha512-bmr0KLITh9u1DJO51USTc4OAKX+su06efhTdNiQV/wagifpbC4kA8zr2hdstKMNG3Z5EKTX3XLFanIiREkd6JQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@16.0.3":
   version "16.0.3"
   resolved "https://registry.npmjs.org/@ngtools/webpack/-/webpack-16.0.3.tgz#e96b5626ae24ccfad8d20876d43ba9433508a599"
@@ -5911,7 +5937,7 @@ tslib@2.5.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
 
-tslib@^2.1.0, tslib@^2.3.0:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0:
   version "2.5.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.5.2.tgz#1b6f07185c881557b0ffa84b111a0106989e8338"
   integrity sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==
