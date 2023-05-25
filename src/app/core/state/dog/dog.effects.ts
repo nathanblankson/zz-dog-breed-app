@@ -15,7 +15,7 @@ export class DogEffects {
         private dogService: DogService,
     ) {}
 
-    fetchDogs$ = createEffect(() =>
+    fetchDogsList$ = createEffect(() =>
         this.actions$.pipe(
             ofType(DogActions.appLoaded.type, DogActions.getAllDogs),
             switchMap(() =>
@@ -25,6 +25,22 @@ export class DogEffects {
                     ),
                     catchError((error) =>
                         of(DogActions.getAllDogsFailed())
+                    )
+                )
+            )
+        )
+    );
+
+    fetchDogDetails$ = createEffect(() =>
+        this.actions$.pipe(
+            ofType(DogActions.getDogDetails),
+            switchMap((action) =>
+                this.dogService.getDogDetails(action.breedKey).pipe(
+                    map((dogDetails) =>
+                        DogActions.getDogDetailsSuccess({ dogDetails })
+                    ),
+                    catchError((error) =>
+                        of(DogActions.getDogDetailsFailed())
                     )
                 )
             )

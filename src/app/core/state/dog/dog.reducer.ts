@@ -15,7 +15,7 @@ const dogReducer = createReducer(
     on(DogActions.getDogDetailsSuccess, (state, { dogDetails }) => ({
         ...state,
         dogDetails: {
-            [dogDetails.breed]: dogDetails,
+            [dogDetails.breedKey]: dogDetails,
         }
     })),
 );
