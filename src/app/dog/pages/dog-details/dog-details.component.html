@@ -1,0 +1,39 @@
+<ng-container *ngIf="dogDetails$ | async as dogDetails">
+    <div class="dog-details">
+        <div class="dog-details-info">
+            <h2>{{ dogDetails.breed }}</h2>
+
+            <p>{{ dogDetails.bio }}</p>
+        </div>
+
+        <div class="dog-details-stats">
+            <div class="dog-details-stats__stat">
+                <h3 class="dog-details-stats__stat-title">
+                    Average Weight
+                </h3>
+
+                <div>{{ dogDetails.minAverageWeight }} - {{ dogDetails.maxAverageWeight }} (lbs)</div>
+            </div>
+
+            <div class="dog-details-stats__stat">
+                <h3 class="dog-details-stats__stat-title">
+                    Intelligence
+                </h3>
+
+                <div>{{ dogDetails.intelligence }}</div>
+            </div>
+
+            <div class="dog-details-stats__stat">
+                <h3 class="dog-details-stats__stat-title">
+                    Popularity
+                </h3>
+
+                <div>{{ dogDetails.popularity }}</div>
+            </div>
+        </div>
+    </div>
+
+    <img [src]="'assets/images/' + dogDetails.image" [alt]="dogDetails.breed"/>
+</ng-container>
+
+

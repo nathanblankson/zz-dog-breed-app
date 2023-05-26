@@ -23,7 +23,7 @@ export class DogEffects {
                     map((dogsList) =>
                         DogActions.getAllDogsSuccess({ dogsList })
                     ),
-                    catchError((error) =>
+                    catchError(() =>
                         of(DogActions.getAllDogsFailed())
                     )
                 )
@@ -39,7 +39,7 @@ export class DogEffects {
                     map((dogDetails) =>
                         DogActions.getDogDetailsSuccess({ dogDetails })
                     ),
-                    catchError((error) =>
+                    catchError(() =>
                         of(DogActions.getDogDetailsFailed())
                     )
                 )
